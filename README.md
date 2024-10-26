@@ -8,3 +8,4 @@ Chapter 1 Getting Started
 Chapter 2 CSS Styling
 Chapter 3 Optimizeing Fonts and Images
 Chapter 4 Creating Layouts and Pages
+Chapter 5 Navigating Between Pages
