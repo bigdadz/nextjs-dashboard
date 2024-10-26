@@ -4,5 +4,5 @@ This is the starter template for the Next.js App Router Course. It contains the 
 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
 
-Chapter 1
-Chapter 2
+Chapter 1 Getting Started
+Chapter 2 CSS Styling
