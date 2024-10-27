@@ -10,3 +10,4 @@ Chapter 3 Optimizeing Fonts and Images
 Chapter 4 Creating Layouts and Pages
 Chapter 5 Navigating Between Pages
 Chapter 6 Setting Up Your Database
+Chapter 7 Fetching Data
