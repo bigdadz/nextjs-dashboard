@@ -30,7 +30,7 @@ export async function createInvoice(formData: FormData) {
       INSERT INTO invoices (customer_id, amount, status, date)
       VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
     `;
-  } catch (error) {
+  } catch {
     return { message: "Failed to create invoice" };
   }
   revalidatePath("/dashboard/invoices");
@@ -53,23 +53,19 @@ export async function updateInvoice(id: string, formData: FormData) {
       SET customer_id = ${customerId}, amount = ${amountInCents}, status = ${status}
       WHERE id = ${id}
     `;
-  } catch (error) {
+  } catch {
     return { message: "Failed to update invoice" };
   }
   revalidatePath("/dashboard/invoices");
   redirect("/dashboard/invoices");
 }
 
-const DeleteInvoice = FormSchema.omit({ id: true, date: true });
-
 export async function deleteInvoice(id: string) {
-  throw new Error("Failed to Delete Invoice");
-
   try {
     await sql`DELETE FROM invoices WHERE id = ${id}`;
     return { message: "Deleted Invoice." };
-  } catch (error) {
+  } catch {
     return { message: "Failed to delete invoice" };
   }
-  // revalidatePath("/dashboard/invoices");
+  revalidatePath("/dashboard/invoices");
 }
