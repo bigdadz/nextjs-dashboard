@@ -19,3 +19,4 @@ Chapter 12 Mutating Data
 Chapter 13 Handling Errors
 Chapter 14 Improving Accessibility
 Chapter 15 Adding Authentication
+Chapter 16 Adding Metadata
