@@ -17,3 +17,4 @@ Chapter 10 Partial Prerendering
 Chapter 11 Adding Search and Pagination
 Chapter 12 Mutating Data
 Chapter 13 Handling Errors
+Chapter 14 Improving Accessibility
